@@ -37,6 +37,13 @@
     color: #3D3D3D;
     cursor: pointer;
     transition: all 0.4s ease;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.divIzquierdo li a{
+    text-decoration: none;
+    color: #3D3D3D;
 }
 
 .divIzquierdo li:hover{
@@ -81,7 +88,7 @@
 .boton i{
     color: #3D3D3D;
     padding-top: 2px;
-    padding-left: 145px;
+    padding-left: 126px;
 }
 
 
@@ -93,19 +100,48 @@
 }
 
 
+/* --------------------------------------------------------------MAIN-------------------------------------------------------------- */
+
+.categoriasMain{
+    background: #EBEAE7;
+    padding-bottom: 80px;
+}
+
+.titulo{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.titulo b{
+    font-size: 26px;
+}
+
+.categoriasContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.unaCategoria img{
+    width: 220px;
+    margin: 40px;
+}
+
 /* --------------------------------------------------------------FOOTER-------------------------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 .footerContenedor{
     max-width: 1170px;
     margin: auto;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .rowFoot{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .columnaFoot ul{
@@ -121,11 +157,11 @@
 
 .columnaFoot{
     width: 25%;
-    padding: 0 15px;
+    padding: 0 48px;
 }
 
 .columnaFoot h4{
-    font-size: 18px;
+    font-size: 15px;
     color: #EBEAE7;
     text-transform: capitalize;
     margin-bottom: 35px;
@@ -149,7 +185,7 @@
 }
 
 .columnaFoot ul li a{
-    font-size: 16px;
+    font-size: 13px;
     text-transform: capitalize;
     color: #EBEAE7;
     text-decoration: none;
@@ -162,4 +198,183 @@
 .columnaFoot ul li a:hover{
     color: #EBEAE7;
     padding-left: 8px;
+}
+
+.columnaFoot .link-redes a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #ebeae72b;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #EBEAE7;
+    transition: all 0.5s ease;
+}
+
+.columnaFoot .link-redes a:hover{
+    color: #24262b;
+    background-color: #EBEAE7;
+}
+
+.categoria {
+    display: none
+}
+
+@media(max-width: 767px){
+    .columnaFoot {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px){
+    .columnaFoot {
+        width: 100%;
+    }
+}
+
+
+/* --------------------------------------------------------------LOGIN-------------------------------------------------------------- */
+
+.loginContenedor{
+    display: flex;
+    flex-direction: column;
+    background: #6e6e6e27;
+    backdrop-filter: blur(2px);
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding: 50px;
+    border: 1px solid #EBEAE7;
+    box-shadow: 0px 0px 15px -7px rgba(70, 70, 70, 0.514);
+    border-radius: 8px;
+}
+
+#complet{
+    border: none;
+    border-bottom: 1px solid #3D3D3D;
+    background: transparent;
+}
+
+#complet:focus{
+    outline: none;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' -25,
+  'opsz' 24
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' -25,
+  'opsz' 24
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    background: #EBEAE7;
+}
+
+.tituloLogin{
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.tituloLogin b{
+    font-size: 140%;
+}
+
+.completarLogin{
+    display: flex;
+    justify-content: center;
+}
+
+.botonLogin{
+    display: flex;
+    justify-content: center;
+}
+
+.complet{
+    margin-bottom: 10px;
+}
+
+.botonLogin button{
+    background: #3d3d3d;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #EBEAE7;
+    border: none;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+/* --------------------------------------------------------------REGISTER-------------------------------------------------------------- */
+
+.registerContenedor{
+    display: flex;
+    flex-direction: column;
+    background: #6e6e6e27;
+    backdrop-filter: blur(2px);
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding: 50px;
+    border: 1px solid #EBEAE7;
+    box-shadow: 0px 0px 15px -7px rgba(70, 70, 70, 0.514);
+    border-radius: 8px;
+}
+
+#completR{
+    border: none;
+    border-bottom: 1px solid #3D3D3D;
+    background: transparent;
+}
+
+#completR:focus{
+    outline: none;
+}
+
+.tituloRegister{
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.tituloRegister b{
+    font-size: 140%;
+}
+
+.completarRegister{
+    display: flex;
+    justify-content: center;
+}
+
+.botonRegister{
+    display: flex;
+    justify-content: center;
+}
+
+.completR{
+    margin-bottom: 10px;
+}
+
+.botonRegister button{
+    background: #3d3d3d;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #EBEAE7;
+    border: none;
+    margin-top: 20px;
+    border-radius: 4px;
 }

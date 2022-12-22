@@ -38,5 +38,5 @@ app.get('/productDetail', (req, res) => {
 
 //a app le pedimos el metodo listen, que se encarga de levantar el servidor
 app.listen(3000, () => 
-console.log('funciona!')
+console.log('servidor Niza corriendo!')
 );
